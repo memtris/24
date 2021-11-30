@@ -1,0 +1,68 @@
+div {
+  user-select: none;
+}
+
+.cycle {
+  outline: 2px solid gray;
+  width: 80px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  font-size: 40px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 0fr 0fr;
+  grid-gap: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  }
+.square {
+  outline: 2px solid green;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  font-size: 40px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.operation {
+  outline: 2px solid gray;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  font-size: 60px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.operations {
+  display: grid;
+  grid-template-columns: 0fr 0fr 0fr 0fr;
+  grid-gap: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.select {
+  outline: 5px solid black;
+  color: black;
+}
+
+.gridSelect {
+ outline: 5px solid darkgreen;
+ color: darkgreen;
+}

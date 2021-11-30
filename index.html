@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="grid" id="grid" style="display: none">
+		<div id="a" class="square" onclick="select(0)"></div>
+		<div id="b" class="square" onclick="select(1)"></div>
+		<div id="c" class="square" onclick="select(2)"></div>
+		<div id="d" class="square" onclick="select(3)"></div>
+	</div>
+	<div id = "undoredo" style="display: none; grid-template-columns: 0fr 0fr; grid-gap: 8px; margin-top: 8px; margin-bottom: 8px;">
+		<div id="undo" class="cycle" onclick="advance(-1)">←</div>
+		<div id="redo" class="cycle" onclick="advance(1)">→</div>
+	</div>
+	<div id="operations" class="operations" style="display: none">
+		<div id="1" class="operation" onclick="op(1)">+</div>
+		<div id="2" class="operation" onclick="op(2)">-</div>
+		<div id="3" class="operation" onclick="op(3)">×</div>
+		<div id="4" class="operation" onclick="op(4)">÷</div>
+	</div>
+	<div>
+		<button onclick="generatePuzzle()">Generate new puzzle</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textfit/2.4.0/textFit.min.js"></script>
+<script src="script.js"></script>
+<script src="math.js"></script>
+  </body>
+</html>
